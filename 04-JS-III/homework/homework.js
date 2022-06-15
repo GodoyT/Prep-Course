@@ -132,7 +132,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
- 
+  let XD = 0;
+  for (let i = 0; i <= arreglo.length-1; i++){
+    if (arreglo [i] > 18){
+      XD += 1;
+    }
+  }
+  return XD;
 }
 
 
@@ -141,7 +147,8 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  if (numeroDeDia > 1 && numeroDeDia < 7) return "Es dia Laboral";
+  return "Es fin de semana";
 } 
 
 
@@ -149,7 +156,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  let str = String(n);
+  let arr = str.split("");
+  if (arr[0] === '9') return true;
+  return false;
 }
 
 
@@ -157,7 +167,9 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  for (let i = 0; i < arreglo.length; i++){
+    
+  }
 } 
 
 
